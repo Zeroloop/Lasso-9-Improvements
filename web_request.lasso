@@ -26,13 +26,13 @@ define collateparams(params::staticarray) => {
 	return #m
 }
 
-define getparam(name::string) 	=> (getparams->find(#name) || staticarray)->join('\n') 
-define postparam(name::string) 	=> (postparams->find(#name) || staticarray)->join('\n')
+define getparam(name::string) => (getparams->find(#name) || staticarray)->join('\n') 
+define postparam(name::string) => (postparams->find(#name) || staticarray)->join('\n')
 
-define getparam(name::string,i::integer) 	=> protect => {return getparams->find(#name)->get(#i)}
-define postparam(name::string,i::integer) 	=> protect => {return postparams->find(#name)->get(#i)}
+define getparam(name::string,i::integer) => protect => {return getparams->find(#name)->get(#i)}
+define postparam(name::string,i::integer) => protect => {return postparams->find(#name)->get(#i)}
 
-define getparam(name::string,-count) 	=> (getparams->find(#name) || staticarray)->size
-define postparam(name::string,-count) 	=> (postparams->find(#name) || staticarray)->size
+define getparam(name::string,-count) => (getparams->find(#name) || staticarray)->size
+define postparam(name::string,-count) => (postparams->find(#name) || staticarray)->size
 
 ?>
