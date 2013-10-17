@@ -1,7 +1,7 @@
 Lasso-9-Improvements
 ====================
 
-Public repository for Lasso 9 improvements / extensions
+Public repository for general Lasso 9 improvements / extensions
 
 web_request.lasso
 -----------------
